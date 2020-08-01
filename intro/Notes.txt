@@ -1,0 +1,165 @@
+
+
+-------------------------------------------------------
+UI     = data + style + behavior
+web UI = HTML + CSS + Javascript
+-------------------------------------------------------
+
+
+what javascript programs can do on HTML-page within browser envi?
+
+javascript-programs can do any UI-magic using browser provided web-apis
+
+browser web apis ==> w3c proposals
+
+all web apis are implementedby browser vendors natively, 
+but abstracted as javascript objects & functions
+
+e.g DOM, XHR/Fetch , Timer , ...
+
+using DOM API
+--------------
+-> can create,update,delete,select HTML elements
+-> can change HTML element's inner content
+-> can change HTML element's style
+-> can listen events on HTML elements
+-> can validate form-fields
+-> can create rich UI components,...
+
+using XHR/Fetch API
+---------------------
+-> can communicate with back-end async
+
+using Timer Api
+--------------------
+-> can execute any actions on timeout/interval
+
+
+using HTML5 APIs
+-------------------
+
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+
+
+
+
+
+------------------------------------------------------------------------------
+challenges while using plain-javascript ( your  code ) with browser apis
+------------------------------------------------------------------------------
+
+
+--> browser compatabilty issues
+    http://caniuse.com
+--> should memory issues manually i.e clean unwanted/invivisible DOM Elements    
+--> should handle performance iisues i.e should keep minimal DOM touch
+--> too much code for simple operations
+--> code organization is difficult
+
+
+legacy solution:
+
+    => server-side page technologies
+
+       e.g ASP,JSP,PHP,.........
+
+
+limitatios of server-side page technologies:
+
+    --> on every request, 
+        server-side programs shud generate new-page keeping client state
+    --> on every-response, also n/w bandwidth leats latency    
+    --> on every response, browser should reload current with new-page
+
+    +
+
+    --> Mobile clients 
+
+best soln:
+
+    => using client-side UI 
+
+
+    how?
+
+    -> New browsers
+    -> HTML-5 APIs
+    +
+    -> using third-party javascript lib & F.Ws
+
+
+
+-------------------------------------------------------------------------------------------------
+third-party javascript lib & F.Ws
+-------------------------------------------------------------------------------------------------
+
+
+
+Jquery
+
+    => DOM & XHR utility lib
+
+
+
+MVC based lib & F.W
+------------------------
+
+    - Knockout.js
+    - Backbone.js
+    - Ember.js
+    - Angular.js  
+    - DOJO
+    - ExtJS from sencha
+
+
+Component based arch
+-------------------------
+
+    how to develop web components ?
+
+    2 ways
+
+    way-1 : using w3c standard apis
+
+            -> Template
+            -> Custom Elements
+            -> Shadow DOM
+
+    way-2 : using third-party javascript lib & F.Ws
+
+
+        -> React.js
+        -> Angular 10  ( our focus )
+        -> Vue.js
+
+----------------------------------------------------------------------------------------        
+  
+
+
+
+javascript language based ECMAScript-spec 
+
+  how to run javascript program ?
+
+     ==> using javascript runtime / engine
+
+
+browser envi
+
+    1. chrome  ==> v8 ( C++ )
+    2. firefox ==> spider-monkey ( java )
+    3. IE/Edge ==> chakra
+    4. Safari  ==> Nitro
+
+
+
+how to run javascript program on desktop / server envi ?
+
+
+Ryan dahl , Node.js   ==> javascript - runtime  ( v8 )
+
+
+
+----------------------------------------------------------------------------------------        
+  
+
