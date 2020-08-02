@@ -1,0 +1,26 @@
+<div>
+
+    <nav class="navbar navbar-light bg-info">
+        <a class="navbar-brand" href="/">shop IT</a>
+    </nav>
+    <hr />
+    <hr />
+
+    <div class="container">
+        <div class="list-group-item" *ngFor="let item of items">
+            <div class="row">
+                <div class="col-3">
+                    <img class="img-fluid" [src]="item.imagePath"/>
+                </div>
+                <div class="col-9">
+                    <h5>{{item.name}}</h5>
+                    <h6>{{item.price}}</h6>
+                    <div>{{item.description}}</div>
+                    <button *ngIf="item.canBuy" class="btn btn-sm btn-dark">buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

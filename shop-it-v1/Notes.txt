@@ -1,0 +1,58 @@
+
+
+
+angular
+
+---------------------------
+A. data binding
+---------------------------
+
+ 4 ways
+ ------
+
+
+ 1. interpolation
+
+    syntax:
+
+    in component's template,
+
+    {{expression}}
+
+  2. property binding
+
+    => to pass dynamic values to element's properties  
+    
+    syntax:
+
+    <element prop1="static-value" [prop2]="expression"/>
+
+---------------------------
+B. directives
+---------------------------
+
+ javascript instructions 
+ to generate dynamic HTML on NG
+
+ 3 types
+
+ 1. component
+
+
+ 2. structural directives
+   
+   why we need ?
+
+   => to change structure of component's template
+   
+   e.g
+
+    ngFor,ngIf,ngSwitch,.......
+
+    syntax:
+
+    in component's template,
+
+    <element *ngIf="booleanexpression"><element>
+    <element *ngFor="looping statement"><element>
+

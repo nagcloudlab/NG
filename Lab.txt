@@ -1,0 +1,28 @@
+
+
+--------------------------------------------------------------------------
+
+> node -v
+> npm  -v
+
+> npm i @angular/cli -g
+> ng -v
+
+
+--------------------------------------------------------------------------
+
+to create new angular application
+
+> ng new <app-name>
+
+
+--------------------------------------------------------------------------
+
+
+what is component in angular ?
+
+ ==> an independent UI fragment with single responsibilty on web page
+
+     => component  =  HTML markup + style + behavior
+
+--------------------------------------------------------------------------    
