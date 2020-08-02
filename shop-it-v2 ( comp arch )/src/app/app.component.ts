@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = "shop-it-v1";
+  title = "shop-it-v2 - comp based arch";
 
   items = [
     {
@@ -28,15 +28,5 @@ export class AppComponent {
     },
 
   ]
-
-  currentTab = 1; // state
-
-  changeTab(event, tabIndex) {
-    this.currentTab = tabIndex;
-  }
-
-  isTabSelected(tabIndex) {
-    return this.currentTab === tabIndex;
-  }
 
 }
