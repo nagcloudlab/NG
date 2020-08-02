@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  title = "shop-it-v1";
 
   items = [
     {
@@ -27,5 +28,15 @@ export class AppComponent {
     },
 
   ]
+
+  cunnrentTab = 1;
+
+  changeTab(event, tabIndex) {
+    this.cunnrentTab = tabIndex;
+  }
+
+  isTabSelected(tabIndex) {
+    return this.cunnrentTab === tabIndex;
+  }
 
 }

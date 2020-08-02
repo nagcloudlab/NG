@@ -27,6 +27,15 @@ A. data binding
 
     <element prop1="static-value" [prop2]="expression"/>
 
+
+  3. event binding
+
+    syntax:
+
+    <element (event-name)="handler($event)"/>
+
+  
+
 ---------------------------
 B. directives
 ---------------------------
@@ -56,3 +65,15 @@ B. directives
     <element *ngIf="booleanexpression"><element>
     <element *ngFor="looping statement"><element>
 
+ 3. attribute/property directive
+
+    ==> directive which will change element's attribute values
+
+
+    e.g
+
+      ngClass,...
+
+    syntax:
+
+    <element [directive]="expressiion/value"/>  
