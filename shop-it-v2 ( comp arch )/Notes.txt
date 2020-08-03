@@ -89,3 +89,7 @@ B. directives
 
     ==> components must have single responsibilty
     ==> components are customizable via input properties
+
+
+
+    

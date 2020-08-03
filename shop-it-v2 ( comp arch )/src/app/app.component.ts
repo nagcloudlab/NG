@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   title = "shop-it-v2 - comp based arch";
-
   items = [
     {
       id: 1,
@@ -26,7 +24,6 @@ export class AppComponent {
       canBuy: true,
       imagePath: "assets/Mobile.png"
     },
-
   ]
 
 }

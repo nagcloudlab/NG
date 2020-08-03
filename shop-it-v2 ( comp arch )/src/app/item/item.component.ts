@@ -7,14 +7,20 @@ import { Component, Input } from '@angular/core';
 })
 export class ItemComponent {
 
-  @Input("value")
+  @Input()
   item;
+
+  reviews = [
+    { author: 'who1@mail.com', stars: 5, body: 'sample-review-1' },
+    { author: 'who2@mail.com', stars: 3, body: 'sample-review-2' }
+  ]
 
   currentTab = 1;
 
   changeTab(event, tabIndex) {
     this.currentTab = tabIndex;
   }
+
   isTabSelected(tabIndex) {
     return this.currentTab === tabIndex;
   }
