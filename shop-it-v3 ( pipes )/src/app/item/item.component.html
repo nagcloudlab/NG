@@ -1,10 +1,11 @@
+
 <div class="row">
     <div class="col-3">
         <img class="img-fluid" [src]="item.imagePath" />
     </div>
     <div class="col-9">
-        <h5>{{item.name}}</h5>
-        <h6>{{item.price}}</h6>
+        <h5>{{item.name | uppercase}} - <small>{{item.mdate | date:'yyyy'}} model</small></h5>
+        <h6>{{item.price|discount:item.discount|currency:item.currency_code}}</h6>
         <button *ngIf="item.canBuy" (click)="handleBuy()" class="btn btn-sm btn-dark">buy</button>
         <ul style="margin-top:5px" class="nav nav-tabs">
             <li class="nav-item">
@@ -29,7 +30,7 @@
                 </a>
             </li>
         </ul>
-        <div *ngIf="isTabSelected(1)">{{item.description}}</div>
+        <div *ngIf="isTabSelected(1)">{{item.description | slice:0:500}}</div>
         <div *ngIf="isTabSelected(2)">Not Yet</div>
         <div *ngIf="isTabSelected(3)">
 
@@ -41,3 +42,5 @@
 
     </div>
 </div>
+
+<!-- {{item|json}} -->

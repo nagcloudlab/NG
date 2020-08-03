@@ -96,5 +96,14 @@ B. directives
         i.e uni-directional data flow
 
 
+--------------------------------------------------------------------
 
-    
+Angular
+
+    - what is component
+    - what is pipe
+    - what is service
+
+
+--------------------------------------------------------------------
+        
