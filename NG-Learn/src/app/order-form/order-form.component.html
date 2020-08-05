@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="card-header">OrderForm</div>
+    <div class="card-body">
+
+        <form [formGroup]="orderForm" (submit)="handleSubmit()">
+            <div class="form-group">
+                <label>Customer Name:</label>
+                <input class="form-control" formControlName="customerName" />
+            </div>
+            <div class="form-group">
+                <label>Customer Email:</label>
+                <input class="form-control" formControlName="email" />
+            </div>
+
+            <hr/>
+            Items  <button (click)="addItem()">Add New Item</button> 
+            <hr/>
+
+            <div formArrayName="items"  
+                *ngFor="let item of orderForm.get('items').value; let i = index;">
+                <div [formGroupName]="i">
+                    <input formControlName="name" placeholder="Item name">
+                    <input formControlName="description" placeholder="Item description">
+                    <input formControlName="price" placeholder="Item price">
+                </div>
+                <!-- Chosen name: {{ orderForm.controls.items.controls[i].controls.name.value }} -->
+            </div>
+
+            <hr/>
+
+            <button class="btn btn-dark">submit</button>
+
+        </form>
+
+    </div>
+</div>

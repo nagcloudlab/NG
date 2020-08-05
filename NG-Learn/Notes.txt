@@ -1,0 +1,10 @@
+
+
+How to manage forms using 'ReactiveFormsModule' ?
+
+  step-1 : create form-group with form-controls
+  step-2 : bind form-group & form-controls with form-fields in template
+  step-3 : bind validator with form controls if required
+  step-4 : on event read form data & send to server-side programs
+
+

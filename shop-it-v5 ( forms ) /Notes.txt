@@ -1,0 +1,141 @@
+
+
+
+angular
+
+---------------------------
+A. data binding
+---------------------------
+
+ 4 ways
+ ------
+
+
+ 1. interpolation
+
+    syntax:
+
+    in component's template,
+
+    {{expression}}
+
+  2. property binding
+
+    => to pass dynamic values to element's properties  
+    
+    syntax:
+
+    <element prop1="static-value" [prop2]="expression"/>
+
+
+  3. event binding
+
+    syntax:
+
+    <element (event-name)="handler($event)"/>
+
+  
+
+---------------------------
+B. directives
+---------------------------
+
+ javascript instructions 
+ to generate dynamic HTML on NG
+
+ 3 types
+
+ 1. component
+
+
+ 2. structural directives
+   
+   why we need ?
+
+   => to change structure of component's template
+   
+   e.g
+
+    ngFor,ngIf,ngSwitch,.......
+
+    syntax:
+
+    in component's template,
+
+    <element *ngIf="booleanexpression"><element>
+    <element *ngFor="looping statement"><element>
+
+ 3. attribute/property directive
+
+    ==> directive which will change element's attribute values
+
+
+    e.g
+
+      ngClass,...
+
+    syntax:
+
+    <element [directive]="expressiion/value"/>  
+
+
+    --------------------------------------------------------------------------
+
+    UI with component based arch
+
+
+    principles of components
+
+
+    ==> components must have single responsibilty
+    ==> components are customizable via input properties
+    ==> 
+        parent component  communicate with child component via input properties
+        child component  communicate with parent component via event
+
+        i.e uni-directional data flow
+
+
+--------------------------------------------------------------------
+
+Angular
+
+    - what is component
+    - what is pipe
+    - what is service
+
+
+--------------------------------------------------------------------
+        
+
+
+  arch issues     ( shop-it-v3 )
+
+  => ui-data/ui-state scattered across many components
+  => component with state,state-change, n/wing logic becomes heavy-weight component
+  => difficult to do unit-testing
+  => components are not re-usable across different pages/application
+
+
+  soln :
+
+    using NG services
+
+    advantages NG services
+
+    ==> by default , NG services 'singleton' objects
+
+
+
+
+--------------------------------------------------------------------
+        
+
+NG Module
+-------------
+  - component  ==> UI piece
+  - pipe       ==> simeple-data tranformation to an UI
+  - service    ==> a single ton object to hold shared data & logic to all UI components 
+
+--------------------------------------------------------------------
+

@@ -28,3 +28,9 @@ what is component in angular ?
 --------------------------------------------------------------------------    
 
 
+
+
+
+How to manage Forms in NG ?
+
+    
