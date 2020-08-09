@@ -1,0 +1,16 @@
+<div class="card card-body" *ngIf="!isCartEmpty">
+    <table class="table table-bordered table-sm">
+        <tbody>
+            <tr *ngFor="let i of cart | keyvalue">
+                <td>{{i.value.item.name}}</td>
+                <td>{{i.value.item.price|currency}}</td>
+                <td><button (click)=handleBuy(i.value.item.id,-1) class="btn btn-dark btn-sm"><i class="fa fa-minus"></i></button></td>
+                <td>{{i.value.qty}}</td>
+                <td><button (click)=handleBuy(i.value.item.id,1) class="btn btn-dark btn-sm"><i class="fa fa-plus"></i></button></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="isCartEmpty">cart is empty</div>
